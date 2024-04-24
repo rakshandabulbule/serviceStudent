@@ -1,0 +1,33 @@
+<div class="card">
+    <div class="card-body">
+        <form #studentForm="ngForm" (ngSubmit)="onStudentAdd(studentForm)">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input ngModel
+                name="fname"
+                type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input ngModel 
+                name="lname"
+                type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input ngModel
+                name="email" 
+                type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="conatct">Contact</label>
+                <input ngModel 
+                name="contact"
+                type="text" class="form-control">
+            </div>
+            <button class="btn btn-outline-primary btn-sm btn-block">
+                Add Student
+            </button>
+        </form>
+    </div>
+</div>
